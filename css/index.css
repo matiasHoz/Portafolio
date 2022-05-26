@@ -71,13 +71,48 @@ y un overflow-x en scroll */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #0e001c;
   scroll-snap-align: center;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: aquamarine;
 }
 
 /*.carousel-slide:nth-child(even) {
   background-color: white;
   color: black;
+}*/
+
+/*.menu {
+  position: sticky;
+  padding: 0.25rem;
+  display: flex;
+  text-align: center;
+  background-color: aquamarine;
+  color: black;
+  border: thin solid black;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+.menu a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  padding: 1.2rem;
+}
+
+.menu a:hover {
+  filter: opacity(0.5);
+}
+
+.menu a:nth-child(even) {
+  border-left: thin solid black;
+}
+
+.menu a[href="#slide-3"] {
+  border-left: thin solid black;
 }*/
 
 .carousel-slide-content-1 {
