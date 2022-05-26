@@ -1,0 +1,292 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.slides {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: block mandatory;
+}
+
+.slide {
+  width: 100%;
+  height: inherit;
+  background-color: black;
+  scroll-snap-align: center;
+}
+
+.slide:nth-child(even) {
+  background-color: darkblue;
+}
+
+.slide-container {
+  width: 100%;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  color: white;
+}
+
+/* Contenedor padre, al tener flex, sus hijos respetarán el mismo tamaño,
+el overflow-x esta en hidden para esconder las "diapositivas" */
+.carousel {
+  border: thick solid darkblue;
+  display: flex;
+  width: 100%;
+  height: 99vh;
+  overflow-x: hidden;
+}
+
+/* Para que funcione el scroll-snap-type, debe tener un ancho definido,
+y un overflow-x en scroll */
+.carousel-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  scroll-snap-align: center;
+}
+
+/*.carousel-slide:nth-child(even) {
+  background-color: white;
+  color: black;
+}*/
+
+.carousel-slide-content-1 {
+  display: grid;
+  grid-template-areas: "photo description";
+  grid-gap: 2rem;
+}
+
+h3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.description {
+  margin-top: 3.7rem;
+}
+
+.description p {
+  font-size: 1.8rem;
+  color: aquamarine;
+}
+
+.photo {
+  width: 14rem;
+  height: 17rem;
+  clip-path: circle(100px at 46% 47%);
+}
+
+.web {
+  margin: 2rem;
+}
+
+.sites {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sites a {
+  text-decoration: none;
+}
+
+.sites a:hover {
+  cursor: pointer;
+  filter: opacity(0.8);
+}
+
+.logo1 {
+  width: 12rem;
+  height: 12rem;
+  clip-path: circle(87px at 50% 50%);
+  border-color: black;
+}
+
+.logo2 {
+  width: 12.5rem;
+  height: 12.5rem;
+  clip-path: circle(100px at 50% 50%);
+}
+
+.logo3 {
+  width: 13.7rem;
+  height: 13.7rem;
+  clip-path: circle(100px at 50% 50%);
+}
+
+.logo4 {
+  width: 13rem;
+  height: 13rem;
+  clip-path: circle(100px at 50% 50%);
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boton1 {
+  margin-left: 3.5rem;
+  background-color: blueviolet;
+  color: white;
+  border: medium solid black;
+}
+
+.boton1:hover {
+  background-color: aquamarine;
+  color: black;
+  border: medium solid black;
+}
+
+.boton2 {
+  margin-left: 3.8rem;
+  background-color: blueviolet;
+  color: white;
+  border: medium solid black;
+}
+
+.boton2:hover {
+  background-color: aquamarine;
+  color: black;
+  border: medium solid black;
+}
+
+.boton3 {
+  margin-left: 4.4rem;
+  background-color: blueviolet;
+  color: white;
+  border: medium solid black;
+}
+
+.boton3:hover {
+  background-color: aquamarine;
+  color: black;
+  border: medium solid black;
+}
+
+.boton4 {
+  margin-left: 4.1rem;
+  background-color: blueviolet;
+  color: white;
+  border: medium solid black;
+}
+
+.boton4:hover {
+  background-color: aquamarine;
+  color: black;
+  border: medium solid black;
+}
+
+button {
+  width: 5rem;
+}
+
+.modal-title {
+  color: black;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: black;
+}
+
+.carousel-slide-content-3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.carousel-slide-content-3 a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: aquamarine;
+}
+
+.carousel-slide-content-3 a:hover {
+  color: blueviolet;
+}
+
+.carousel-slide-content-4 {
+  text-align: center;
+}
+
+.carousel-slide-content-4 h3 {
+  color: aquamarine;
+  margin: 2rem;
+}
+
+.carousel-slide-content-4 p {
+  font-size: 2rem;
+}
+
+.mailto {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.mailto:hover {
+  color: blueviolet;
+}
+
+.cellphone {
+  text-decoration: none;
+  color: white;
+}
+
+.cellphone:hover {
+  color: blueviolet;
+}
+
+.linkedin {
+  text-decoration: none;
+  color: white;
+}
+
+.linkedin:hover {
+  color: blueviolet;
+}
+
+.github {
+  text-decoration: none;
+  color: white;
+}
+
+.github:hover {
+  color: blueviolet;
+}
