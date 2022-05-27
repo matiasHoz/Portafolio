@@ -327,6 +327,15 @@ button {
   color: blueviolet;
 }
 
+.cv {
+  text-decoration: none;
+  color: white;
+}
+
+.cv:hover {
+  color: blueviolet;
+}
+
 @media only screen and (min-width: 412px) and (max-width: 915px) {
   .photo {
     position: relative;
