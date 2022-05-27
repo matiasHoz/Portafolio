@@ -264,12 +264,17 @@ button {
 
 .carousel-slide-content-3 a {
   text-decoration: none;
-  font-size: 2rem;
+}
+
+.carousel-slide-content-3 p {
+  text-decoration: none;
+  font-size: 1.8rem;
   color: aquamarine;
 }
 
-.carousel-slide-content-3 a:hover {
+.carousel-slide-content-3 p:hover {
   color: blueviolet;
+  cursor: pointer;
 }
 
 .carousel-slide-content-4 {
@@ -350,79 +355,44 @@ button {
   .web {
     position: relative;
     font-size: 3rem;
-    bottom: 5%;
+    bottom: 3%;
   }
 
   .sites {
     display: flex;
     flex-direction: column;
-    grid-gap: 1rem;
     position: relative;
-    left: 39%;
+    left: 43%;
+    bottom: 0%;
+    grid-gap: 3rem;
   }
 
   .logo1 {
-    height: 10vh;
-    width: 10%;
-    clip-path: circle(40px at 50% 50%);
+    clip-path: circle(55px at 50% 50%);
   }
 
-  .logo2 {
-    height: 10vh;
-    width: 10%;
-    clip-path: circle(40px at 50% 50%);
+  .carousel-slide-content-2 img {
+    height: 14vh;
+    width: 140%;
   }
 
-  .logo3 {
+  .carousel-slide-content-2 a {
     height: 10vh;
     width: 10%;
-    clip-path: circle(40px at 50% 50%);
-  }
-
-  .logo4 {
-    height: 10vh;
-    width: 10%;
-    clip-path: circle(50px at 50% 50%);
   }
 
   .information {
-    position: relative;
-  }
-
-  .boton1 {
-    position: relative;
-    bottom: 920%;
-    left: 209.2%;
-  }
-
-  .boton2 {
-    position: relative;
-    left: 91%;
-    bottom: 668%;
-  }
-
-  .boton3 {
-    position: relative;
-    bottom: 410%;
-    right: 30%;
-  }
-
-  .boton4 {
-    position: relative;
-    right: 144%;
-    bottom: 150%;
+    visibility: hidden;
   }
 
   .audiovisuales {
     font-size: 3.5rem;
-    margin: 2rem;
-    bottom: 3%;
-    position: relative;
+    margin: 3rem;
+    bottom: 4%;
   }
+
   .carousel-slide-content-3 a {
     font-size: 1.7rem;
-    margin: 1rem;
-    text-align: center;
   }
 
   .carousel-slide-content-4 h3 {
