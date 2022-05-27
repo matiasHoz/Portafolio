@@ -328,14 +328,14 @@ button {
     height: 9rem;
     width: 9rem;
     clip-path: circle(60px at 47% 50%);
-    bottom: 55%;
+    bottom: 40%;
     left: 95%;
   }
 
   .mati {
     position: relative;
     font-size: 2rem;
-    bottom: 30%;
+    bottom: 15%;
     right: 37%;
   }
 
@@ -343,8 +343,7 @@ button {
     box-sizing: border-box;
     position: relative;
     text-align: center;
-    bottom: 25%;
-    right: 36%;
+    right: 37%;
     font-size: 1rem;
   }
 
@@ -412,5 +411,28 @@ button {
     position: relative;
     right: 144%;
     bottom: 150%;
+  }
+
+  .audiovisuales {
+    font-size: 3.5rem;
+    margin: 2rem;
+    bottom: 3%;
+    position: relative;
+  }
+  .carousel-slide-content-3 a {
+    font-size: 1.7rem;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .carousel-slide-content-4 h3 {
+    font-size: 3rem;
+    position: relative;
+    bottom: 5%;
+  }
+
+  .carousel-slide-content-4 p {
+    font-size: 2rem;
+    margin: 3rem;
   }
 }
