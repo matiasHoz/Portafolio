@@ -45,8 +45,6 @@ body {
   color: white;
 }
 
-/* Contenedor padre, al tener flex, sus hijos respetarán el mismo tamaño,
-el overflow-x esta en hidden para esconder las "diapositivas" */
 .carousel {
   border: thick solid darkblue;
   display: flex;
@@ -55,8 +53,6 @@ el overflow-x esta en hidden para esconder las "diapositivas" */
   overflow-x: hidden;
 }
 
-/* Para que funcione el scroll-snap-type, debe tener un ancho definido,
-y un overflow-x en scroll */
 .carousel-container {
   width: 100%;
   display: grid;
@@ -136,7 +132,7 @@ h3 {
 }
 
 .photo {
-  width: 14rem;
+  width: 16vw;
   height: 17rem;
   clip-path: circle(100px at 46% 47%);
 }
@@ -324,4 +320,97 @@ button {
 
 .github:hover {
   color: blueviolet;
+}
+
+@media only screen and (min-width: 412px) and (max-width: 915px) {
+  .photo {
+    position: relative;
+    height: 9rem;
+    width: 9rem;
+    clip-path: circle(60px at 47% 50%);
+    bottom: 55%;
+    left: 95%;
+  }
+
+  .mati {
+    position: relative;
+    font-size: 2rem;
+    bottom: 30%;
+    right: 37%;
+  }
+
+  .prof {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    bottom: 25%;
+    right: 36%;
+    font-size: 1rem;
+  }
+
+  .web {
+    position: relative;
+    font-size: 3rem;
+    bottom: 5%;
+  }
+
+  .sites {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    position: relative;
+    left: 39%;
+  }
+
+  .logo1 {
+    height: 10vh;
+    width: 10%;
+    clip-path: circle(40px at 50% 50%);
+  }
+
+  .logo2 {
+    height: 10vh;
+    width: 10%;
+    clip-path: circle(40px at 50% 50%);
+  }
+
+  .logo3 {
+    height: 10vh;
+    width: 10%;
+    clip-path: circle(40px at 50% 50%);
+  }
+
+  .logo4 {
+    height: 10vh;
+    width: 10%;
+    clip-path: circle(50px at 50% 50%);
+  }
+
+  .information {
+    position: relative;
+  }
+
+  .boton1 {
+    position: relative;
+    bottom: 920%;
+    left: 209.2%;
+  }
+
+  .boton2 {
+    position: relative;
+    left: 91%;
+    bottom: 668%;
+  }
+
+  .boton3 {
+    position: relative;
+    bottom: 410%;
+    right: 30%;
+  }
+
+  .boton4 {
+    position: relative;
+    right: 144%;
+    bottom: 150%;
+  }
 }
